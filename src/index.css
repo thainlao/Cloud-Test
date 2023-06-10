@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.separator {
+  border-bottom: 1px solid #ccc;
+}
+
+.buttonstyle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59, 130, 246, var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255, 255, 255, var(--tw-text-opacity));
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.buttonstyle:hover {
+  box-shadow: 0 0 0 2px rgb(52, 130, 246);
+}
+
+.icon-img {
+  height: 1em; 
+  width: auto; 
+  margin-right: 0.2em; 
+}
+
+.glow {
+  background-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #888888;
+  outline: none;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:checked,
+.radio input[type="radio"]:checked {
+  border-color: #3883f6;
+}
+
+.checkbox input[type="checkbox"]:focus,
+.radio input[type="radio"]:focus {
+  border-color: #3883f6;
+}
+
+.checkbox label,
+.radio label {
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.35s;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  width: 320px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-success {
+  color: green;
+}
+
+.modal-error {
+  color: red;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
